@@ -1,32 +1,40 @@
-/* Seletor */
+:root {
+    --cor-principal:
+    --font-size:
+}
 
-/* CLass selector */
+/* CLass selector comum flexivel 2 */
 /* .logotipo {
-    color: rgb(61, 190, 149);
+    color: rgb(61, 190, 149) !important;
 } */
 
-/* ID selector */
+/* ID selector importante 1 */
 /* #logo {
     cor:red;
 } */
 
-/* Elemento selector */
+/* Elemento selector 3 */
 /* div {
     color: brown;
-} */
+ } */
 
- #teste2 {
+ /* .amarelo {
     color: yellow;
  }
 
- #teste1 {
+ .verde {
     color: blue;
  }
 
- #teste3 {
+ .roxo {
     color: green;
  }
 
-  #teste4 {
-    color: blue;
-  }
+ p.rt1 {
+    font-size: 5xp;
+ }
+
+ a[data-impacta="home"] {
+    font-size: 10px;
+    color: palevioletred;
+ } */
