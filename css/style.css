@@ -1,40 +1,34 @@
 :root {
-    --cor-principal:
-    --font-size:
+    --primary-color: #96BB7C;
+    --light-color: #ffffff;
 }
 
-/* CLass selector comum flexivel 2 */
+* {
+   margin: 0;
+}
+
+
+/* Seletor class */
 /* .logotipo {
-    color: rgb(61, 190, 149) !important;
+    color:blueviolet;
 } */
 
-/* ID selector importante 1 */
+/* Seletor ID */
 /* #logo {
-    cor:red;
+    color: var(--cor-azul);
 } */
 
-/* Elemento selector 3 */
+/* Seletor Elemento */
 /* div {
-    color: brown;
- } */
-
- /* .amarelo {
-    color: yellow;
- }
-
- .verde {
     color: blue;
- }
+} */
 
- .roxo {
-    color: green;
- }
+/* p.rt1 {
+    font-size: 5px;
+}
 
- p.rt1 {
-    font-size: 5xp;
- }
-
- a[data-impacta="home"] {
+a[data-impacta="home"] {
     font-size: 10px;
-    color: palevioletred;
- } */
+    color: red;
+} */
+
