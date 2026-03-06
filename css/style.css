@@ -18,68 +18,69 @@ html {
 }
 
 /* Section Header */
-.navbar{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 20px 100px;
-   padding: 20px 10%;
-   background-color: var(--fade-secondary-color);
-   font-family: Arial, Helvetica, sans-serif; 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    padding: 20px 10%;
+    background-color: var(--fade-secundary-color);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo a {
-   font-size: 1.5rem;
-   color: var(--brand-log);
-   font-weight: bold;
-   text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--brand-log);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .menu ul {
-   display: flex;
-   list-style: none;
-   gap: 30px; 
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
 .item-link {
-   text-decoration: none;
-   color: var(--second-text-color);
-   font-weight: bold;
-   font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--second-text-color);
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .item-link:hover {
-   color: var(--brand-log);
+    color: var(--hover-text-color);
 }
 
 .nav-auth {
-   display: flex;
-   align-items: center;
-   color:var(--primary-color) ;
-   gap: 25px;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    gap: 25px;
 }
 
 .btn-login {
-   text-decoration: none;
-   color: var(--primary-color);
-   font-weight: bold;
-   font-size: 0,9rem;
+    text-decoration: none;
+    color:var(--primary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .btn {
-   text-decoration: none;
-   background-color: var(--primary-color);
-   color: var(--light-color);
-   padding: 12px 30px;
-   border-radius: 10px;
-   font-weight: bold;
-   font-size: 0,9;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color:var(--light-color);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .btn:hover {
     background-color: #414c3a;
     background-color: var(--hover-btn-color);
 }
+
 
 /* Secttion Main */
 .trust {
@@ -92,9 +93,25 @@ html {
 
 .images-tecnology {
     background-color: rgba(0, 137, 179, 0);
-    background-image: url(../images/ellipse.png);
+    background-image: url(../images/ellipse1.png);
     background-repeat: no-repeat;
     background-position: center;
+    
+    position: relative;
+}
+
+.single {
+   position: absolute;
+   left: -60px;
+   top: 250px;
+   z-index: 2;
+}
+
+.scores {
+   position: absolute;
+   left: -20px;
+   top:450px;
+   z-index: 1;
 }
 
 .trust .container {
@@ -109,6 +126,7 @@ html {
     font-size: 1.3rem;
     margin-bottom: 20px;
 }
+
 
 /* Seletor class */
 /* .logotipo {
@@ -131,6 +149,4 @@ html {
 
 a[data-impacta="home"] {
     font-size: 10px;
-    color: red;
-} */
-
+    color: red;*/
