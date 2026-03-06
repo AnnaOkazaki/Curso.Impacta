@@ -1,12 +1,81 @@
 :root {
     --primary-color: #96BB7C;
     --light-color: #ffffff;
+    --fade-secondary-color: #ddf4ff;
+    --brand-log: #252b42;
+    --second-text-color: #737373;
 }
 
+/* aplica em tudo */
 * {
    margin: 0;
+   box-sizing: border-box;
 }
 
+html {
+   font-size: 16px;
+}
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 100px;
+   background-color: var(--fade-secondary-color);
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+.logo a {
+   font-size: 1.5rem;
+   color: var(--brand-log);
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.menu ul {
+   display: flex;
+   list-style: none;
+   gap: 30px; 
+}
+
+.item-link {
+   text-decoration: none;
+   color: var(--second-text-color);
+   font-weight: bold;
+   font-size: 0.9rem;
+}
+
+.item-link:hover {
+   color: var(--brand-log);
+}
+
+.nav-auth {
+   display: flex;
+   align-items: center;
+   color:var(--primary-color) ;
+   gap: 25px;
+}
+
+.btn-login {
+   text-decoration: none;
+   color: var(--primary-color);
+   font-weight: bold;
+   font-size: 0,9rem;
+}
+
+.btn {
+   text-decoration: none;
+   background-color: var(--primary-color);
+   color: var(--light-color);
+   padding: 12px 30px;
+   border-radius: 10px;
+   font-weight: bold;
+   font-size: 0,9;
+}
+
+.btn:hover {
+   background-color: #327d1f;
+}
 
 /* Seletor class */
 /* .logotipo {
