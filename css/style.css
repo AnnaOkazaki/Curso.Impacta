@@ -6,6 +6,7 @@
     --second-text-color: #737373;
     --hover-text-color:#272935;
     --hover-btn-color: #414c3a;
+    --gray-color: #fafafa;
 }
 
 * {
@@ -33,6 +34,11 @@ html {
    src: url(../font/Outfit-VariableFont_wght.ttf);
 }
 
+@font-face {
+   font-family: alumni;
+   src: url(../font/AlumniSansPinstripe-Italic.ttf);
+}
+
 /* Section Header */
 .navbar {
     display: flex;
@@ -41,7 +47,7 @@ html {
     padding: 20px 100px;
     padding: 20px 10%;
     background-color: var(--fade-secundary-color);
-    font-family: peppersauce;
+    font-family: outfit;
 }
 
 .logo a {
@@ -147,6 +153,8 @@ html {
     color: var(--primary-color);
     font-size: 1.3rem;
     margin-bottom: 20px;
+    font-family: alumni;
+    font-weight: bold;
 }
 
 
@@ -172,3 +180,22 @@ html {
 a[data-impacta="home"] {
     font-size: 10px;
     color: red;*/
+
+    /* footer section */
+
+    .footer .fields, .footer .footer-fields {
+        padding: 20px 10%;
+    }
+
+    .footer ul {
+        list-style: none;
+    }
+
+    .footer .container .top-footer, .footer .container .bottom-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer .bottom-footer {
+        background-color: var(--gray-color);
+    }
