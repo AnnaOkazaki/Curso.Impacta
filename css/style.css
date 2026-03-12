@@ -196,17 +196,16 @@ html {
     }
 }
 
-.images-tecnology {
+.images-tecnology2.png { 
     background-color: rgba(0, 137, 179, 0);
-    background-image: url(../images/ellipse.png);
+    background-image: url(../images/ellipse1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-
 }
 
-.images-tecnology .estudante{
+.images-tecnology2.png estudante {
     max-width: 100%;
     height: auto;
 
