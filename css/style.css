@@ -6,7 +6,7 @@
     --second-text-color: #737373;
     --hover-text-color:#272935;
     --hover-btn-color: #414c3a;
-    --gray-color: #fafafa;
+    --gray-color: #FAFAFA;
 }
 
 * {
@@ -18,36 +18,79 @@ html {
     font-size: 16px;
 }
 
-/* fonte personalizada */
+/* Font personalizada */
 @font-face {
-   font-family: peppersauce;
-   src: url(../font/pepper-sauce.ttf);
+    font-family: peppersauce;
+    src: url(../font/pepper-sauce.ttf);
 }
 
 @font-face {
-   font-family: playfairdisplay;
-   src: url(../font/PlayfairDisplay-VariableFont_wght.ttf);
+    font-family: displayfont;
+    src: url(../font/PlayfairDisplayfont_wght.ttf);
 }
 
 @font-face {
-   font-family: outfit;
-   src: url(../font/Outfit-VariableFont_wght.ttf);
+    font-family: lavi;
+    src: url(../font/LavishlyYours-Regular.ttf);
 }
 
 @font-face {
-   font-family: alumni;
-   src: url(../font/AlumniSansPinstripe-Italic.ttf);
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 /* Section Header */
+.header {
+    background-color: var(--fade-secundary-color);
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 100px;
-    padding: 20px 10%;
-    background-color: var(--fade-secundary-color);
-    font-family: outfit;
+    padding: 20px 0;
+    
+    /* font-family: "Macondo", cursive;
+    font-weight: 400;
+    font-style: normal; */
+
+    font-family: displayfont;
+
+    /* box-shadow: 1px 2px 9px #b4b4b4;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; */
 }
 
 .logo a {
@@ -55,6 +98,18 @@ html {
     color: var(--brand-log);
     font-weight: bold;
     text-decoration: none;
+}
+
+.logo {
+    transform:  scale(100%);
+    opacity: 1;
+    transition-property: transform, opacity;
+    transition-duration: 1000ms, 1s;
+}
+
+.logo:hover {
+    transform: scale(110%);
+    opacity: 0.5;
 }
 
 .menu ul {
@@ -72,6 +127,8 @@ html {
 
 .item-link:hover {
     color: var(--hover-text-color);
+    position: relative;
+    top: -3px;
 }
 
 .nav-auth {
@@ -92,54 +149,109 @@ html {
     text-decoration: none;
     background-color: var(--primary-color);
     color:var(--light-color);
-    padding: 12px 30px;
+    padding: 5px 40px 10px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 0.9rem;
+    border: transparent;
+}
+
+.btn::after {
+    content: "\00BB";
+    color: #000;
+    position: relative;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+.btn:hover::after {
+    left: 15px;
+    color: #fff;;
 }
 
 .btn:hover {
-    background-color: #414c3a;
     background-color: var(--hover-btn-color);
 }
-
 
 /* Secttion Main */
 .trust {
     background-color: var(--fade-secundary-color);
-    padding: 20px 10% 0;
+    padding: 40px 0 0;
     min-height: 68vh;
-    /* display: flex;
-    align-items: center; */
+}
+
+.h1 {
+    animation-name: efeitofont;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    font-size: 1.2rem;
+}
+
+@keyframes efeitofont {
+    0% {
+        font-size: 50px;
+    }
+    100% {
+        font-size: inherit;
+    }
 }
 
 .images-tecnology {
     background-color: rgba(0, 137, 179, 0);
-    background-image: url(../images/ellipse1.png);
+    background-image: url(../images/ellipse.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-   position: relative;
+    position: relative;
+
+}
+
+.images-tecnology .estudante{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.anime {
+    transition-property: transform;
+    transition-duration: 2ms;
+    transition-timing-function: ease-in-out;
+    transform: rotate(0deg);
+    transform-origin: 0%;
 }
 
 .single {
-   position: absolute;
-   left: -50px;
-   top: 250px;
-   z-index: 2;
+    position: absolute;
+    left: -8%;
+    top: 42%;
+    z-index: 2;
+    width: 50px;
+}
+
+@media screen and (min-width: 576px) {
+    .single {
+        width: 120px;
+    }
+}
+
+.single:hover, .scores:hover, .global-statics:hover {
+    transform: rotate(10deg);
+    transform-origin: 100%;
+    cursor: pointer;
 }
 
 .scores {
-   position: absolute;
-   left: -20px;
-   top:450px;
-   z-index: 1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
-.statistics {
-   position: absolute;
-   left: 415px;
-   top: 320px;
-   z-index: 3;
+.global-statics {
+    position: absolute;
+    right: -80px;
+    bottom: 150px;
+    z-index: 3;
 }
 
 .trust .container {
@@ -153,9 +265,19 @@ html {
     color: var(--primary-color);
     font-size: 1.3rem;
     margin-bottom: 20px;
-    font-family: alumni;
-    font-weight: bold;
+
+    text-shadow: 1px 1px 1px #000;
+    transition-property: text-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
 }
+
+
+.best-dental:hover {
+    text-shadow: 2px 1px 2px #000;
+    cursor: pointer;
+}
+
 
 
 /* Seletor class */
@@ -179,23 +301,89 @@ html {
 
 a[data-impacta="home"] {
     font-size: 10px;
-    color: red;*/
+    color: red;
+} */
 
-    /* footer section */
+/* @import url(/css/footer.css); */
 
-    .footer .fields, .footer .footer-fields {
-        padding: 20px 10%;
+/* Aplicação do mobile first */
+/*
+ O mobile first é uma tecnica usada por desenvolvedores que 
+ garante a implementação de css primeiro nos dispositivos moveis
+*/
+.container-responsive {
+    max-width: 100%;
+    margin: auto;
+    padding: 2% 2%;
+}
+
+/* Break points */
+@media screen and (min-width: 576px) {
+    .container-responsive {
+        max-width: 540px;
+        margin: auto;
     }
 
-    .footer ul {
-        list-style: none;
+    .h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-responsive {
+        max-width: 720px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-responsive {
+        max-width: 960px;
+        margin: auto;
     }
 
-    .footer .container .top-footer, .footer .container .bottom-footer {
-        display: flex;
-        justify-content: space-between;
+    .h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-responsive {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container-responsive {
+        max-width: 1320px;
+        margin: auto;
+    }
+}
+
+.btn-menu {
+    display: none;      
+}
+
+.btn-menu:hover ~ .navbar .menu {
+    display: block;  
+}
+
+ @media screen and (max-width: 992px) {
+    .btn-menu {
+        display: block; 
+    }
+    .menu {
+        display: none;
     }
 
-    .footer .bottom-footer {
-        background-color: var(--gray-color);
-    }
+    .menu ul {
+            flex-direction: column;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            background-color: #000000e5;
+            width: 100%;
+            z-index: 1000;
+        }
+}
