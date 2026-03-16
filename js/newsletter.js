@@ -1,17 +1,43 @@
-var dadosUser = document.querySelector(".email");
-dadosUser.addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
+(function() {
+    "use strict"
+
+    console.dir(Document)
+
+})()
+
+
+    //const Carro = {
+      //  modelo: 'c4'
+        //cor: 'cinza'
+        //acerar: function() {
+          //  let acelerar = 0;
+            //console.log(acelerar++);
+        //}
+   // }
+
+   // console.log(Carro.acerar)
+
+
+
+//var primeiroNome = "Otavio"; // String
+//var ultimoNome = "Silva"; // String
+//var idade = 52; // number
+//var somaIdade;
+//var informacao;
+//var dadosUser = document.querySelector(".email");
+//dadosUser.addEventListener("keypress", function(e) {
+  //  if (e.key === "Enter") {
         // Inicio do programa
-        var valor = dadosUser.value;
-        console.log(valor.length);
+        //var valor = dadosUser.value;
+        //console.log(valor.length);
         
         
         
 
         // Fim do programa
-        e.preventDefault();
-    }
-})
+       // e.preventDefault();
+    //}
+//})
 
 
 
@@ -36,15 +62,21 @@ dadosUser.addEventListener("keypress", function(e) {
     / divisão
     * multiplicação
 */
+somaIdade = idade + 2;
 // somaIdade = idade + 2;
 // informacao = primeiroNome + " " + ultimoNome + " - idade: " + somaIdade + " anos";
+informacao = `${primeiroNome} ${ultimoNome} - idade: ${somaIdade} anos`;
 // informacao = `${primeiroNome} ${ultimoNome} - idade: ${somaIdade} anos`;
 
 // Operadores relacionais
+var nota = "7"; // nota da prova
+var faltas = 10; // faltas do aluno
 // var nota = "7"; // nota da prova
 // var faltas = 10; // faltas do aluno
 
 // Regras para aprovação
+var mediaMeta = 7; // Nota deve ser >=7
+var faltasNoBimestre = 5; // Faltas deve ser < 5
 // var mediaMeta = 7; // Nota deve ser >=7
 // var faltasNoBimestre = 5; // Faltas deve ser < 5
 // >, >=, !=, ==, <, <=, ===
@@ -53,6 +85,7 @@ dadosUser.addEventListener("keypress", function(e) {
 
 // Operadores Logicos
 // && = e , || = ou, ! = não
+var resultatoMedia = nota >= mediaMeta && faltas < faltasNoBimestre; //boolean
 // var resultatoMedia = nota >= mediaMeta && faltas < faltasNoBimestre; //boolean
 
 
@@ -112,5 +145,7 @@ dadosUser.addEventListener("keypress", function(e) {
 */
 
 // Ternario
+var respostaAluno = nota > 2 ? "Aprovado" : "Reprovado";
+console.log(respostaAluno);
 // var respostaAluno = nota > 2 ? "Aprovado" : "Reprovado";
 // console.log(respostaAluno);
