@@ -1,43 +1,22 @@
-(function() {
-    "use strict"
-
-    console.dir(Document)
-
-})()
-
-
-    //const Carro = {
-      //  modelo: 'c4'
-        //cor: 'cinza'
-        //acerar: function() {
-          //  let acelerar = 0;
-            //console.log(acelerar++);
-        //}
-   // }
-
-   // console.log(Carro.acerar)
-
-
-
-//var primeiroNome = "Otavio"; // String
-//var ultimoNome = "Silva"; // String
-//var idade = 52; // number
-//var somaIdade;
-//var informacao;
-//var dadosUser = document.querySelector(".email");
-//dadosUser.addEventListener("keypress", function(e) {
-  //  if (e.key === "Enter") {
+var primeiroNome = "Otavio"; // String
+var ultimoNome = "Silva"; // String
+var idade = 52; // number
+var somaIdade;
+var informacao;
+var dadosUser = document.querySelector(".email");
+dadosUser.addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
         // Inicio do programa
-        //var valor = dadosUser.value;
-        //console.log(valor.length);
+        var valor = dadosUser.value;
+        console.log(valor.length);
         
         
         
 
         // Fim do programa
-       // e.preventDefault();
-    //}
-//})
+        e.preventDefault();
+    }
+})
 
 
 
